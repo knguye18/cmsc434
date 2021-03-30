@@ -1,0 +1,43 @@
+
+
+#root {
+    background-color: #FFFF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+button {
+    background-color: #FFFF;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+button > h1 {
+    margin: auto;
+    color: #FFFF;
+}
+
+#card {
+    width: calc(100%/3);
+    height: 300px;
+    border-radius: 15px;
+    margin: 0px 50px 0px 50px;
+    background-color: #e65762;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#container {
+    display: flex;
+    align-items: center;
+    flex: 0;
+    margin: auto;
+    color: #FFFF;
+}
