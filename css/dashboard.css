@@ -3,7 +3,7 @@ body {
     background-color: rgba(238, 238, 238, 0.741);
 }
 
-#root {
+.root {
     width: 100%;
     margin-top: 10rem;
     display: flex;
@@ -25,7 +25,7 @@ button > h1 {
     color: #FFFF;
 }
 
-#card {
+.card {
     width: calc(100%/3);
     height: 300px;
     border: 0em;
@@ -39,14 +39,14 @@ button > h1 {
     
 }
 
-#card:hover,
-#card:target {
+.card:hover,
+.card:target {
     transform: translateY(-.5rem);
     box-shadow: .2rem .2rem .4rem .6rem rgba(235, 168, 161, 0.6);
     cursor: pointer;
 }
 
-#container {
+.container {
     display: flex;
     align-items: center;
     flex: 1;
