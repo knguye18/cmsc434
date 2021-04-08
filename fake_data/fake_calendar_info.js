@@ -1,5 +1,3 @@
-export default calendar_data = {
-
-
+export default calendar_data = ([
     
-}
+])
