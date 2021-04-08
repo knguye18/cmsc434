@@ -4,15 +4,15 @@
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(./fonts/roboto.ttf);
+    font-family: "roboto";
+    src: url("/fonts/roboto.ttf");
 }
 
 html, body
 {
     height: 100%;
     min-height: 100%;
-    font-family: "roboto";
+    font-family: "roboto", 'Times New Roman', Times, serif;
 }
 
 body
@@ -36,7 +36,7 @@ body
 input, button
 {
     color: #fff;
-    /* font-family: Nunito; */
+    font-family: "roboto";
     padding: 0;
     margin: 0;
     border: 0;
