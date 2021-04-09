@@ -27,13 +27,13 @@ body {
 }
 
 .blocker {
-    position: fixed;
-    top: 0;
-    background: transparent;
-    opacity: 0.7;
-    height: 100%;
-    width: 100%;
-  }
+  position: fixed;
+  top: 0;
+  background: transparent;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+}
 
 @font-face {
   font-family: "Material Icons";
@@ -173,7 +173,6 @@ button > h5 {
   display: flex;
   height: 20rem;
   flex: 1;
-  
 }
 
 .block {
@@ -190,10 +189,10 @@ button > h5 {
 }
 
 .event-listing {
-    padding-left: 3rem;
+  padding-left: 3rem;
 }
 
 li {
-    padding-top: .5rem;
-    font-size: 20px;
+  padding-top: 0.5rem;
+  font-size: 20px;
 }

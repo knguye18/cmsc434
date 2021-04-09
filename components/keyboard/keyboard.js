@@ -177,3 +177,11 @@ const Keyboard = {
 window.addEventListener("DOMContentLoaded", function () {
     Keyboard.init();
 });
+
+function hideKeyboard() {
+    console.log('fff')
+    document.querySelectorAll(".keyboard").forEach(e => {
+        console.log(e)
+        e.classList.add("keyboard--hidden");
+    })
+}

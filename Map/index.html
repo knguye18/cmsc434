@@ -5,17 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="map.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../components/search_bar.css" />
+    <link rel="stylesheet" href="/components/keyboard/keyboard.css" />
 </head>
 <body>
+    <div class="white_cover"></div>
+    <div class="blocker" onclick="hideKeyboard();"></div>
 
-    <div>
-        <button id = "bg">Ground Floor</button>
-        <button id = "b1">First Floor</button>
-        <button id = "bu">Upper Floors</button>
+    <!-- search bar -->
+    <div id="cover">
+        <div class="tb">
+          <div class="td">
+            <input
+              id="search-bar"
+              class="use-keyboard-input"
+              type="text"
+              placeholder="Search room # or prof"
+              required
+            />
+          </div>
+          <div class="td" id="s-cover">
+            <button>
+              <div id="s-circle"></div>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+    <div style="padding: 15% 50px 0 80px;">
+        <button id = "bg" class="floor-button" style="background-color: red;">Ground Floor</button>
+        <button id = "b1" class="floor-button">First Floor</button>
+        <button id = "bu" class="floor-button">Upper Floors</button>
     </div>
     <img src="g.png" alt="">
     <script src = "script.js"></script>
-
+    <script src="/components/keyboard/keyboard.js"></script>
+    <div class="simple-keyboard"></div>
 </body>
 </html>

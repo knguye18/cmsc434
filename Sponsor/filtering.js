@@ -70,14 +70,6 @@ const hideModal = (e) => {
     document.getElementById("modal").classList.toggle("hidden");
 }
 
-function hideKeyboard() {
-    console.log('fff')
-    document.querySelectorAll(".keyboard").forEach(e => {
-        console.log(e)
-        e.classList.add("keyboard--hidden");
-    })
-}
-
 
 window.addEventListener("DOMContentLoaded", function () {
     let formedHtml = "";
