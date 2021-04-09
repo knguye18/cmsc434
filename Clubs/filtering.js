@@ -109,6 +109,9 @@ function hideKeyboard() {
     })
 }
 
+const stopP = (e) => {
+    e.stopPropagation();
+}
 
 window.addEventListener("DOMContentLoaded", function () {
     let formedHtml = "";

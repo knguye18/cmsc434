@@ -101,6 +101,9 @@ const hideModal = (e) => {
     document.getElementById("modal").classList.toggle("hidden");
 }
 
+const stopP = (e) => {
+    e.stopPropagation();
+}
 
 window.addEventListener("DOMContentLoaded", function () {
     let formedHtml = "";

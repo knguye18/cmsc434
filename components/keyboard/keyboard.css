@@ -70,7 +70,7 @@
 }
 
 .keyboard--hidden {
-    display: none;
+    bottom: -100%;
 }
 
 .keyboard__keys {
@@ -131,9 +131,16 @@
 }
 
 .blocker {
+    background: transparent;
     position: fixed;
     top: 0;
-    background: transparent;
     height: 100%;
     width: 100%;
+    user-select: none;
+    transition: bottom 0.4s;
+}
+
+.blocker-hide {
+    bottom: 0;
+    height: 0;
 }

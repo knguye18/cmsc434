@@ -22,14 +22,14 @@ const Keyboard = {
         this.elements.keysContainer = document.createElement("div");
 
         // Setup main elements
-        this.elements.main.classList.add("blocker", "keyboard--hidden", "keyboard-main");
+        this.elements.main.classList.add("blocker", "keyboard-main", "blocker-hide");
         this.elements.keysContainer.classList.add("keyboard__keys");
         this.elements.keysContainer.appendChild(this._createKeys());
 
         this.elements.keys = this.elements.keysContainer.querySelectorAll(".keyboard__key");
         
         this.elements.kb = document.createElement("div");
-        this.elements.kb.classList.add("keyboard");
+        this.elements.kb.classList.add("keyboard", "keyboard--hidden");
         // Add to DOM
         this.elements.kb.appendChild(this.elements.keysContainer);
         this.elements.main.appendChild(this.elements.kb);
@@ -173,14 +173,16 @@ const Keyboard = {
         this.properties.value = initialValue || "";
         this.eventHandlers.oninput = oninput;
         this.eventHandlers.onclose = onclose;
-        this.elements.main.classList.remove("keyboard--hidden");
+        this.elements.main.classList.remove("blocker-hide");
+        this.elements.kb.classList.remove("keyboard--hidden");
     },
 
     close() {
         this.properties.value = "";
         this.eventHandlers.oninput = oninput;
         this.eventHandlers.onclose = onclose;
-        this.elements.main.classList.add("keyboard--hidden");
+        this.elements.main.classList.add("blocker-hide");
+        this.elements.kb.classList.add("keyboard--hidden");
     }
 };
 
@@ -193,6 +195,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function hideKeyboard(event) {
     document.querySelectorAll(".blocker").forEach(e => {
+        e.classList.add("blocker-hide");
+    })
+    document.querySelectorAll(".keyboard").forEach(e => {
         e.classList.add("keyboard--hidden");
     })
 }

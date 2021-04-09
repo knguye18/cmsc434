@@ -167,6 +167,7 @@ a:link {
 
   transition: 0.2s;
   cursor: pointer;
+  z-index: 999;
 }
 
 .link-2::before {
