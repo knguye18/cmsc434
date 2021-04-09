@@ -8,28 +8,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
-    sans-serif;
-
-  min-height: 100vh;
-  --background: linear-gradient(
-    to bottom,
-    hsl(0, 91%, 64%),
-    hsl(344, 71%, 57%)
-  );
-  --light: hsl(0, 0%, 100%);
-}
-
 .hidden {
   display: none;
 }
@@ -46,7 +24,6 @@ a:link {
   left: 0;
   z-index: 10;
 
-  display: none;
   justify-content: center;
   align-items: center;
 
@@ -62,15 +39,21 @@ a:link {
 }
 
 .modal {
-  width: 60rem;
+  margin: auto;
+  top: 15%;
+  width: 80rem;
+  min-height: 40rem;
   padding: 4rem 2rem;
   border-radius: 0.8rem;
 
-  color: var(--light);
-  background: var(--background);
-  box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem hsla(10, 50%, 50%, 0.3);
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    hsl(0, 91%, 64%),
+    hsl(344, 71%, 57%)
+  );
+  /* box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem hsla(0, 0%, 100%, 0.857); */
   position: relative;
-
   overflow: hidden;
 }
 
@@ -83,7 +66,7 @@ a:link {
 .modal__details {
   text-align: center;
 
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
 }
@@ -100,11 +83,10 @@ a:link {
 }
 
 .modal__text {
-  padding: 0 4rem;
+  padding: 0 1.2rem;
   margin-bottom: 4rem;
 
-  font-size: 1.6rem;
-  line-height: 2;
+  font-size: 1.5rem;
 }
 
 .modal__text::before {
@@ -115,8 +97,8 @@ a:link {
   left: 100%;
   transform: translate(-50%, -50%);
 
-  width: 50rem;
-  height: 50rem;
+  width: 25rem;
+  height: 25rem;
   border: 1px solid rgba(255, 255, 255, 0.213);
   border-radius: 100rem;
 
@@ -124,16 +106,18 @@ a:link {
 }
 
 .modal__btn {
-  padding: 1rem 1.6rem;
+  padding: .5rem .5rem;
   border: 1px solid hsla(0, 0%, 100%, 0.4);
   border-radius: 100rem;
-
+  width: 200px;
+  height: 50px;
   color: inherit;
   background: transparent;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-family: inherit;
-  letter-spacing: 0.2rem;
-
+  position: absolute;
+  bottom: 3rem;
+  left: 5rem;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -182,11 +166,11 @@ a:link {
   align-items: center;
 
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .link-2::before {
   content: "×";
-
   transform: translateY(-0.1rem);
 }
 
