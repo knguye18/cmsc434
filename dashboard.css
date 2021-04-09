@@ -88,8 +88,8 @@ button > h3 {
     border: 0em;
     border-radius: 15px;
     margin: 30px 50px 0px 50px;
-    /* background-color: #ff7575; */
-    background-color: #ff2c3ece;
+    background-color: #ff7575;
+    /* background-color: #ff2c3ece; */
     box-shadow: 0px 5px 10px 0px #ff2c3ee9, 0 0 0 15px #ffffffeb;
     /* box-shadow: .4rem .2rem .2rem .1rem rgba(235, 168, 161, 0.6); */
     display: flex;

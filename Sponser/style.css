@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "roboto";
+    src: url("/fonts/roboto.ttf");
+}
+
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+    font-family: "roboto", 'Times New Roman', Times, serif;
+}
+
+body
+{
+    background-image: url("/imgs/bg.jpg");
+    background-position: center 60%;
+    margin: 0;
+    
+}
