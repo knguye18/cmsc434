@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "cmsc434_phase2"
+    "liveServer.settings.multiRootWorkspaceName": "cmsc434_phase2",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
 }
