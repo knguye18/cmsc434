@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="map.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="map.css" />
     <link rel="stylesheet" href="../components/search_bar.css" />
     <link rel="stylesheet" href="/components/keyboard/keyboard.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href=""><i class="fa fa-fw fa-user"></i> Clubs</a>
+      <a href="../Calendar/index.html"
+        ><i class="fa fa-fw fa-calendar"></i> Calendar</a
+      >
+      <a href="../Sponsor/index.html"
+        ><i class="fa fa-fw fa-building"></i> Sponsors</a
+      >
+      <a class="active" href=""
+        ><i class="fa fa-fw fa-map"></i> Floor Plans</a
+      >
+    </div>
     <div class="white_cover"></div>
     <div class="blocker" onclick="hideKeyboard();"></div>
 
     <!-- search bar -->
     <div id="cover">
-        <div class="tb">
-          <div class="td">
-            <input
-              id="search-bar"
-              class="use-keyboard-input"
-              type="text"
-              placeholder="Search room # or prof"
-              required
-            />
-          </div>
-          <div class="td" id="s-cover">
-            <button>
-              <div id="s-circle"></div>
-              <span></span>
-            </button>
-          </div>
+      <div class="tb">
+        <div class="td">
+          <input
+            id="search-bar"
+            class="use-keyboard-input"
+            type="text"
+            placeholder="Search room # or prof"
+            required
+          />
+        </div>
+        <div class="td" id="s-cover">
+          <button>
+            <div id="s-circle"></div>
+            <span></span>
+          </button>
         </div>
       </div>
-      <!--  -->
-
-    <div style="padding: 15% 50px 0 80px;">
-        <button id = "bg" class="floor-button" style="background-color: red;">Ground Floor</button>
-        <button id = "b1" class="floor-button">First Floor</button>
-        <button id = "bu" class="floor-button">Upper Floors</button>
     </div>
-    <img src="g.png" alt="">
-    <script src = "script.js"></script>
+    <!--  -->
+
+    <div style="padding: 15% 50px 0 80px">
+      <button id="bg" class="floor-button" style="background-color: red">
+        Ground Floor
+      </button>
+      <button id="b1" class="floor-button">First Floor</button>
+      <button id="bu" class="floor-button">Upper Floors</button>
+    </div>
+    <img src="g.png" alt="" />
+    <script src="script.js"></script>
     <script src="/components/keyboard/keyboard.js"></script>
     <div class="simple-keyboard"></div>
-</body>
+  </body>
 </html>

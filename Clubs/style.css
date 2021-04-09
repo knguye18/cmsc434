@@ -27,7 +27,6 @@ body {
   z-index: -1;
 }
 
-
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
@@ -170,7 +169,6 @@ button > h5 {
   display: flex;
   height: 20rem;
   flex: 1;
-  
 }
 
 .block {
@@ -187,10 +185,51 @@ button > h5 {
 }
 
 .event-listing {
-    padding-left: 3rem;
+  padding-left: 3rem;
 }
 
 li {
-    padding-top: .5rem;
-    font-size: 20px;
+  padding-top: 0.5rem;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position: absolute;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Five links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4caf50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
