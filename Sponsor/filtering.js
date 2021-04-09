@@ -25,6 +25,37 @@ const fake_sponsor_data = [
         job_openings: "noooo shot",
         events: [],
     },
+    {
+        name: "Club",
+        description: "A YER",
+        job_openings: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        job_openings: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        job_openings: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        job_openings: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        job_openings: "noooo shot",
+        events: [],
+    },
+    
 ];
 
 

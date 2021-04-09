@@ -25,6 +25,36 @@ const fake_club_data = [
         join_info: "noooo shot",
         events: [],
     },
+    {
+        name: "Club",
+        description: "A YER",
+        join_info: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        join_info: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        join_info: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        join_info: "noooo shot",
+        events: [],
+    },
+    {
+        name: "Club",
+        description: "A YER",
+        join_info: "noooo shot",
+        events: [],
+    },
 ];
 
 
