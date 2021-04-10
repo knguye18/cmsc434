@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "roboto";
-    src: url("/fonts/roboto.ttf");
+    src: url("fonts/roboto.ttf");
 }
 
 .tb
@@ -33,7 +33,7 @@ input, button
 #cover
 {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 0;
     right: 0;
     width: 80%;
@@ -44,6 +44,7 @@ input, button
     box-shadow: 0 10px 20px #ddddddd7, 0 0 0 20px #ffffffeb;
     /* box-shadow: 0 0 0 20px #ffffffeb; */
     transform: scale(0.6);
+    z-index: 10;
 }
 
 form
