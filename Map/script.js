@@ -28,7 +28,7 @@ b_u.addEventListener('click', () => {
     img.src = '../imgs/floor_images/u.png';
 })
 
-input.oninputg = (e)=>{
+input.oninput = (e)=>{
     let userData = e.target.value; //user enetered data
     let emptyArray = [];
     
