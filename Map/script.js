@@ -5,12 +5,16 @@ let b_u = document.querySelector('#bu')
 let search = document.querySelector("#cover")
 let input = search.querySelector("input")
 let suggestions = document.querySelector("#autobox")
+let icon = search.querySelector('#s-cover')
 
 let vals = [
-    "Golub",
-    "Nelson",
-    "Kruskal",
-    "What does CSS stands for?",
+    "IRB2240, Clyde Kruskal",
+    "IRB2210, Nelson Padua-Perez",
+    "IRB1210, Evan Golub",
+    "IRB5456, Andrew Childs",
+    "IRB1156",
+    "IRB1207",
+    "IRB2152",
 ];
 b_g.addEventListener('click', () => {
     img.src = '../imgs/floor_images/g.png';
@@ -24,7 +28,7 @@ b_u.addEventListener('click', () => {
     img.src = '../imgs/floor_images/u.png';
 })
 
-input.onkeyup = (e)=>{
+input.oninputg = (e)=>{
     let userData = e.target.value; //user enetered data
     let emptyArray = [];
     
@@ -55,13 +59,11 @@ input.onkeyup = (e)=>{
 
 function select(element){
     let selectData = element.textContent;
-    inputBox.value = selectData;
+    input.value = selectData;
     icon.onclick = ()=>{
-        webLink = "https://www.google.com/search?q=" + selectData;
-        linkTag.setAttribute("href", webLink);
-        linkTag.click();
+        find_room()
     }
-    searchWrapper.classList.remove("active");
+    suggestions.classList.remove("active");
 }
 
 function showSuggestions(list){
@@ -76,20 +78,33 @@ function showSuggestions(list){
 }
 
 function find_room() {
-    let input = document.getElementById("search-bar").value
+    let input = document.getElementById("search-bar").value;
     // if input contains "golub":
     // change image to golubs office img
-    if (input == 'IRB1156') {
-        img.src = '../imgs/floor_images/1156.png'
+    input = input.toLocaleLowerCase();
+    if (input.includes('1156')) {
+        img.src = '../imgs/floor_images/1156.png';
     }
-    else if (input == 'IRB1207') {
-        img.src = '../imgs/floor_images/1207.png'
+    else if (input.includes('1207')) {
+        img.src = '../imgs/floor_images/1207.png';
     }
-    else if (input == 'IRB2152') {
-        img.src = '../imgs/floor_images/2152.png'
+    else if (input.includes('2152')) {
+        img.src = '../imgs/floor_images/2152.png';
     }
-    else if (input == 'IRB0324') {
-        img.src = '../imgs/floor_images/antonov.png'
+    else if (input.includes('0324')) {
+        img.src = '../imgs/floor_images/antonov.png';
+    }
+    else if (input.includes('kruskal') || input.includes('2240')) {
+        img.src = '../imgs/floor_images/kruskal_2240.png';
+    }
+    else if (input.includes('childs') || input.includes('5456')) {
+        img.src = '../imgs/floor_images/childs_5456.png';
+    }
+    else if (input.includes('nelson') || input.includes('2210')) {
+        img.src = '../imgs/floor_images/nelson_2210.png';
+    }
+    else if (input.includes('golub') || input.includes('1210')) {
+        img.src = '../imgs/floor_images/golub_1210.png'
     }
     
 }
