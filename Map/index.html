@@ -29,31 +29,36 @@
     </div>
     <div class="white_cover"></div>
     <div class="blocker" onclick="hideKeyboard();"></div>
-    <!-- onkeyup="search_animal()" type="text"
-        name="search" placeholder="Search animals.."> -->
-    <!-- search bar -->
-    <div id="cover", style = 'position: absolute; top: 20%; left: 0%;'>
-      <div class="tb">
-        <div class="td">
-          <input 
-            id="search-bar"
-            onkeyup = "find_room()"
-            class="use-keyboard-input"
-            type="text"
-            placeholder="Search..."
-            required
-          />
-        </div>
-        <div class="td" id="s-cover">
-          <button>
-            <div id="s-circle"></div>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!--  -->
 
+    <div id="cover", style = 'position: absolute; top: 20%; left: 10%;'>
+        <div class="tb">
+            <div class="td">
+            <input 
+                id="search-bar"
+                oninput = "find_room()"
+                class="use-keyboard-input"
+                type="text"
+                placeholder="Search..."
+                required
+            />
+            </div>
+            
+            <div class="td" id="s-cover">
+            <button>
+                <div id="s-circle"></div>
+                <span></span>
+            </button>
+            </div>
+        </div>  
+        </div>
+        <div class="autocom-box", id = 'autobox'>
+            <li>golub</li>
+            <li>golub</li>
+            <li>golub</li>
+            <li>golub</li>
+            <li>golub</li>
+        </div>
+    </div>
     <div style="padding: 15% 50px 0 80px">
       <button id="bg" class="floor-button" style="background-color: red">
         Ground Floor

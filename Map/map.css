@@ -98,7 +98,6 @@ img {
 
 .floor-button {
   margin: 20px;
-
   width: 150px;
   height: 150px;
   color: black;
@@ -133,6 +132,27 @@ img {
 
 .navbar a.active {
   background-color: #4caf50;
+}
+
+.autocom-box {
+  position: absolute;
+  top: 25%;
+  left: 31%;
+  background-color: #cacacad7;
+  width: 460px;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.autocom-box.active li{
+  display: block;
 }
 
 @media screen and (max-width: 500px) {
