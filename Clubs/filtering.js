@@ -63,7 +63,7 @@ function onSearchBarChange(e) {
     const search_results = fake_club_data.filter(x => x.name.toLowerCase().includes(query))
     let formedHtml = ""
     search_results.forEach((element, index) => {
-        const icon_src = "/imgs/clubs_icons/" + element.icon;
+        const icon_src = "../imgs/clubs_icons/" + element.icon;
         const card = `
             <button class="card" onclick="onClickCard(event, ${index});">
                 <img class="icon" src=${icon_src} />
@@ -116,7 +116,7 @@ const stopP = (e) => {
 window.addEventListener("DOMContentLoaded", function () {
     let formedHtml = "";
     fake_club_data.forEach((element, index) => {
-        const icon_src = "/imgs/clubs_icons/" + element.icon;
+        const icon_src = "../imgs/clubs_icons/" + element.icon;
         const card = `
             <button class="card" onclick="onClickCard(event, ${index});">
                 <img class="icon" src=${icon_src} />
