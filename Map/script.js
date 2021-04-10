@@ -30,22 +30,32 @@ b_u.addEventListener('click', () => {
 
 input.oninput = (e)=>{
     let userData = e.target.value; //user enetered data
-    let emptyArray = [];
+    let fake_room_data = [
+        {
+            room: "2315",
+            prof: "Dr.Golub"
+        },
+        {
+            room: "1111",
+            prof: "",
+        }
+    ];
     
     console.log(search.classList, userData, input, suggestions)
 
     if(userData){
         
-        emptyArray = vals.filter((data)=>{
+        let filtered_data = fake_room_data.filter((data)=>{
             //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
-            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase()); 
+            return data.room.toLocaleLowerCase().includes(userData.toLocaleLowerCase()) || data.prof.toLocaleLowerCase().includes(userData.toLocaleLowerCase()); 
         });
-        emptyArray = emptyArray.map((data)=>{
+        
+        html_results = filtered_data.map((data)=>{
             // passing return data inside li tag
-            return data = '<li>'+ data +'</li>';
+            return data = '<li>'+ `${data.room}, ${data.prof}` +'</li>';
         });
         suggestions.classList.add("active"); //show autocomplete box
-        showSuggestions(emptyArray);
+        showSuggestions(html_results);
         let allList = suggestions.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
             //adding onclick attribute in all li tag
