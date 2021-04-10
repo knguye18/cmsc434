@@ -29,16 +29,18 @@
     </div>
     <div class="white_cover"></div>
     <div class="blocker" onclick="hideKeyboard();"></div>
-
+    <!-- onkeyup="search_animal()" type="text"
+        name="search" placeholder="Search animals.."> -->
     <!-- search bar -->
-    <div id="cover">
+    <div id="cover", style = 'position: absolute; top: 20%; left: 0%;'>
       <div class="tb">
         <div class="td">
-          <input
+          <input 
             id="search-bar"
+            onkeyup = "find_room()"
             class="use-keyboard-input"
             type="text"
-            placeholder="Search room # or prof"
+            placeholder="Search..."
             required
           />
         </div>
@@ -59,7 +61,7 @@
       <button id="b1" class="floor-button">First Floor</button>
       <button id="bu" class="floor-button">Upper Floors</button>
     </div>
-    <img src="g.png" alt="" />
+    <img src="imgs/floor_images/antonov.png" alt="" />
     <script src="script.js"></script>
     <script src="/components/keyboard/keyboard.js"></script>
     <div class="simple-keyboard"></div>
