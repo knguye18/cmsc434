@@ -10,10 +10,10 @@
  * Issues: https://github.com/edlynvillegas/evo-calendar/issues
  *
 */
-.royal-navy .calendar-sidebar {
-  background-color: #216583;
-  -webkit-box-shadow: 5px 0 18px -3px #216583;
-  box-shadow: 5px 0 18px -3px #216583;
+.royal-navy .calendar-sidebar { /* Left sidebar of the calendar */
+  background-color: #ff1010;
+  -webkit-box-shadow: 5px 0 18px -3px #ff1010;
+  box-shadow: 5px 0 18px -3px #ff1010;
 }
 .royal-navy.sidebar-hide .calendar-sidebar {
   -webkit-box-shadow: none;
@@ -90,10 +90,10 @@
   border-color: #164255;
 }
 .royal-navy tr.calendar-body .calendar-day .day.calendar-today {
-  background-color: #216583;
+  background-color: #ff1010;
   color: #fff;
-  -webkit-box-shadow: 0 5px 10px -3px #216583;
-  box-shadow: 0 5px 10px -3px #216583;
+  -webkit-box-shadow: 0 5px 10px -3px #ff1010;
+  box-shadow: 0 5px 10px -3px #ff1010;
 }
 .royal-navy #eventListToggler {
   width: 35px;
@@ -114,7 +114,7 @@
 .royal-navy .calendar-events {
   padding-top: 50px;
   padding-bottom: 40px;
-  background-color: #216583;
+  background-color: #ff1010;
   color: #fff;
 }
 .royal-navy .calendar-events::-webkit-scrollbar-thumb {
@@ -136,9 +136,10 @@
 .royal-navy .event-container > .event-info > p {
   color: #fff;
 }
+/* Color font during hover*/
 .royal-navy .event-container:hover > .event-info > p {
   color: #164255;
-}
+} 
 .royal-navy .event-container > .event-info > p.event-title > span {
   color: #fff;
   border: 1px solid #164255;
@@ -177,8 +178,8 @@
     bottom: -8px;
   }
   .royal-navy .calendar-events {
-    -webkit-box-shadow: -5px 0 18px -3px #216583;
-    box-shadow: -5px 0 18px -3px #216583;
+    -webkit-box-shadow: -5px 0 18px -3px #ff1010;
+    box-shadow: -5px 0 18px -3px #ff1010;
   }
   .royal-navy.event-hide .calendar-events {
     -webkit-transform: translateX(calc(100% + 1px));
@@ -211,12 +212,12 @@
 }
 @media screen and (max-width: 425px) {
   .royal-navy .calendar-sidebar > .calendar-year {
-    background-color: #216583;
+    background-color: #ff1010;
     -webkit-box-shadow: 0 5px 8px -3px rgba(12, 37, 47, 0.65);
     box-shadow: 0 5px 8px -3px rgba(12, 37, 47, 0.65);
   }
   .royal-navy .calendar-sidebar > .month-list {
-    background-color: #174d65;
+    background-color: #ff1010;
   }
   .royal-navy .calendar-sidebar > .month-list > .calendar-months {
     padding: 10px;
