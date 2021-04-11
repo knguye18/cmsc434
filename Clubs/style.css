@@ -11,10 +11,10 @@ body {
 }
 
 body {
+  background-size: cover;
   background-image: url("../imgs/bg.jpg");
   background-position: center 60%;
   margin: 0;
-  position: absolute;
 }
 
 .white_cover {
@@ -189,6 +189,7 @@ li {
 }
 
 .navbar {
+  top: 0;
   width: 100%;
   background-color: #555;
   overflow: auto;
