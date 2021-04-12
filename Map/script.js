@@ -60,7 +60,6 @@ input.oninput = (e)=>{
     console.log(search.classList, userData, input, suggestions)
 
     if(userData){
-        
         let filtered_data = fake_room_data.filter((data)=>{
             //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
             return data.room.toLocaleLowerCase().includes(userData.toLocaleLowerCase()) || data.prof.toLocaleLowerCase().includes(userData.toLocaleLowerCase()); 
@@ -102,7 +101,47 @@ function showSuggestions(list){
 }
 
 icon.onclick = ()=>{
-    find_room()
+    let fake_room_data = [
+        {
+            room: "2315",
+            prof: "Dr.Golub"
+        },
+        {
+            room: "1111",
+            prof: "",
+        },
+        {
+            room: "1207",
+            prof: "",
+        },
+        {
+            room: "1156",
+            prof: "",
+        },
+        {
+            room: "2152",
+            prof: "",
+        },
+        {
+            room: "2015",
+            prof: "Dr. Kruskal",
+        }
+    ];
+
+    userData = input.value
+
+    let filtered_data = fake_room_data.filter((data)=>{
+        //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+        return data.room.toLocaleLowerCase().includes(userData.toLocaleLowerCase()) || data.prof.toLocaleLowerCase().includes(userData.toLocaleLowerCase()); 
+    });
+
+    if (filtered_data.length === 0) {
+        console.log(filtered_data)
+        alert("No imformation found!")
+    }
+    else {
+        find_room()
+    }
 }
 
 function find_room() {
