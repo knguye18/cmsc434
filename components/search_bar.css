@@ -44,7 +44,6 @@ input, button
     box-shadow: 0 10px 20px #ddddddd7, 0 0 0 20px #ffffffeb;
     /* box-shadow: 0 0 0 20px #ffffffeb; */
     transform: scale(0.6);
-    z-index: 10;
 }
 
 form
