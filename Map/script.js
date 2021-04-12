@@ -70,9 +70,7 @@ input.oninput = (e)=>{
 function select(element){
     let selectData = element.textContent;
     input.value = selectData;
-    icon.onclick = ()=>{
-        find_room()
-    }
+    find_room();
     suggestions.classList.remove("active");
 }
 
@@ -85,6 +83,10 @@ function showSuggestions(list){
         listData = list.join('');
     }
     suggestions.innerHTML = listData;
+}
+
+icon.onclick = ()=>{
+    find_room()
 }
 
 function find_room() {

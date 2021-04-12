@@ -134,6 +134,8 @@
   background-color: #fff;
 }
 .royal-navy .event-container > .event-info > p {
+  padding: 5px;
+  margin: 5px;
   color: #fff;
 }
 .royal-navy .event-container:hover > .event-info > p {

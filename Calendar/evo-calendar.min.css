@@ -46,7 +46,7 @@ button:focus {
   width: 200px;
   height: 100%;
   float: left;
-  background-color: #8773c1;
+  background-color: #98979d;
   color: #fff;
   z-index: 1;
   -webkit-box-shadow: 5px 0 18px -3px #8773c1;
@@ -140,9 +140,10 @@ button:focus {
 }
 .calendar-inner {
   position: relative;
-  padding: 40px 30px;
+  padding: 60px 30px;
   float: left;
   width: 100%;
+  height: 100%;
   max-width: calc(100% - 600px);
   margin-left: 200px;
   background-color: #fff;
