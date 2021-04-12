@@ -15,6 +15,7 @@ body {
   background-image: url("../imgs/bg.jpg");
   background-position: center 60%;
   margin: 0;
+  overflow-y: hidden;
 }
 
 .white_cover {
@@ -125,6 +126,7 @@ button > h5 {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  background-color: white;
 }
 
 .card:hover,
@@ -154,6 +156,7 @@ button > h5 {
   height: 300px;
   border-radius: 15px;
   pointer-events: none;
+  object-fit: contain;
 }
 
 .modal_inner_container {
