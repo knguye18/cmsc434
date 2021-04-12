@@ -38,6 +38,22 @@ input.oninput = (e)=>{
         {
             room: "1111",
             prof: "",
+        },
+        {
+            room: "1207",
+            prof: "",
+        },
+        {
+            room: "1156",
+            prof: "",
+        },
+        {
+            room: "2152",
+            prof: "",
+        },
+        {
+            room: "2015",
+            prof: "Dr. Kruskal",
         }
     ];
     

@@ -139,6 +139,7 @@ img {
   left: 26%;
   background-color: #cacacad7;
   width: 48%;
+  z-index: 20;
 }
 
 .autocom-box li {
