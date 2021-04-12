@@ -1,5 +1,10 @@
 /* defaults */
 /* =============================================== */
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/roboto.ttf");
+}
+
 *,
 *::after,
 *::before {
@@ -171,7 +176,7 @@ a:link {
 }
 
 .link-2::before {
-  content: "×";
+  content: "x";
   transform: translateY(-0.1rem);
 }
 
@@ -196,7 +201,7 @@ a:link {
 }
 
 .second-version-link::after {
-  content: "\2197";
+  content: "";
 
   position: absolute;
   top: 0;
