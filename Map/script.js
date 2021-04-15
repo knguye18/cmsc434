@@ -132,7 +132,7 @@ icon.onclick = ()=>{
 
     let filtered_data = fake_room_data.filter((data)=>{
         //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
-        return data.room.toLocaleLowerCase().includes(userData.toLocaleLowerCase()) || data.prof.toLocaleLowerCase().includes(userData.toLocaleLowerCase()); 
+        return userData.toLocaleLowerCase().includes(data.room.toLocaleLowerCase()) || data.prof.toLocaleLowerCase().includes(userData.toLocaleLowerCase()); 
     });
 
     if (filtered_data.length === 0) {
@@ -140,7 +140,7 @@ icon.onclick = ()=>{
         alert("No imformation found!")
     }
     else {
-        find_room()
+        find_room();
     }
 }
 
