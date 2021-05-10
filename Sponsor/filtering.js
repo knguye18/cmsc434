@@ -20,53 +20,7 @@ const fake_sponsor_data = [
         icon: "co.jpg",
         events: ["Today 5pm - 6pm Tech Talk", "Tomorrow 5pm - 6pm On Site Interview"],
     },
-    {
-        name: "Company",
-        description: "filler",
-        job_openings: "filler",
-        icon: "umd.png",
-        events: ["None"],
-    },
     
-    {
-        name: "Company",
-        description: "filler",
-        job_openings: "filler",
-        icon: "umd.png",
-        events: ["None"],
-    },
-    
-    {
-        name: "Company",
-        description: "filler",
-        job_openings: "filler",
-        icon: "umd.png",
-        events: ["None"],
-    },
-    
-    {
-        name: "Company",
-        description: "filler",
-        job_openings: "filler",
-        icon: "umd.png",
-        events: ["None"],
-    },
-    
-    {
-        name: "Company",
-        description: "filler",
-        job_openings: "filler",
-        icon: "umd.png",
-        events: ["None"],
-    },
-    
-    {
-        name: "Company",
-        description: "filler",
-        job_openings: "filler",
-        icon: "umd.png",
-        events: ["None"],
-    },
     
 ];
 
