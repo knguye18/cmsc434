@@ -4,6 +4,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/roboto.ttf");
+}
+
 body {
   background-size: cover;
   background-image: url("../imgs/bg.jpg");
@@ -28,7 +33,7 @@ body {
 }
 
 #calendar {
-  width: 90%;
+  width: 99%;
   height: 80%;
   border-radius: 50px;
   position: absolute;

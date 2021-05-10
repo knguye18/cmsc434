@@ -11,9 +11,9 @@
  *
 */
 .royal-navy .calendar-sidebar {
-  background-color: #216583;
-  -webkit-box-shadow: 5px 0 18px -3px #216583;
-  box-shadow: 5px 0 18px -3px #216583;
+  background-color: #b5b5b5e9;
+  -webkit-box-shadow: 5px 0 18px -3px #b5b5b5e9;
+  box-shadow: 5px 0 18px -3px #b5b5b5e9;
 }
 .royal-navy.sidebar-hide .calendar-sidebar {
   -webkit-box-shadow: none;
@@ -24,11 +24,17 @@
 }
 .royal-navy .calendar-sidebar > .month-list > .calendar-months {
   padding: 0 15px 0 0;
+  background: transparent;
 }
 .royal-navy .calendar-sidebar > .month-list > .calendar-months > li {
   padding: 9px 30px;
   border-radius: 0 25px 25px 0;
 }
+
+.calendar-months {
+  color: #393939;
+}
+
 .royal-navy .calendar-sidebar > .month-list > .calendar-months > li:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -73,25 +79,25 @@
   bottom: -6px;
 }
 .royal-navy .calendar-inner {
-  color: #164255;
+  color: #393939;
 }
 .royal-navy th[colspan="7"] {
-  color: #216583;
+  color: #393939;
 }
 .royal-navy th[colspan="7"]::after {
   background-color: rgba(33, 101, 131, 0.15);
 }
 .royal-navy tr.calendar-body .calendar-day .day:hover {
   background-color: rgba(48, 152, 197, 0.25);
-  color: #164255;
+  color: #393939;
 }
 .royal-navy tr.calendar-body .calendar-day .day.calendar-active,
 .royal-navy tr.calendar-body .calendar-day .day.calendar-active:hover {
-  border-color: #164255;
+  border-color: #b5b5b5e9;
 }
 .royal-navy tr.calendar-body .calendar-day .day.calendar-today {
-  background-color: #216583;
-  color: #fff;
+  background-color: #b5b5b5e9;
+  color: #393939;
   -webkit-box-shadow: 0 5px 10px -3px #216583;
   box-shadow: 0 5px 10px -3px #216583;
 }
@@ -114,7 +120,7 @@
 .royal-navy .calendar-events {
   padding-top: 50px;
   padding-bottom: 40px;
-  background-color: #216583;
+  background-color: #b5b5b5e9;
   color: #fff;
 }
 .royal-navy .calendar-events::-webkit-scrollbar-thumb {
@@ -128,7 +134,7 @@
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 1px solid #fff;
-  color: #fff;
+  color: #393939;
 }
 .royal-navy .event-container:hover {
   background-color: #fff;
@@ -136,14 +142,15 @@
 .royal-navy .event-container > .event-info > p {
   padding: 5px;
   margin: 5px;
-  color: #fff;
+  color: #393939;
+  font-size: 2rem;
 }
 .royal-navy .event-container:hover > .event-info > p {
-  color: #164255;
+  color: #393939;
 }
 .royal-navy .event-container > .event-info > p.event-title > span {
-  color: #fff;
-  border: 1px solid #164255;
+  color: #393939;
+  border: 1px solid #b5b5b5e9;
   border-radius: 15px;
   background-color: rgb(22 66 85);
 }
@@ -152,19 +159,20 @@
   border: 1px solid #fff;
 }
 .royal-navy .event-list > .event-empty > p {
-  color: #fff;
+  color: #393939;
 }
 @media screen and (max-width: 768px) {
   .royal-navy .calendar-sidebar > .month-list > .calendar-months > li {
     padding: 6px 26px;
   }
+
   .royal-navy button.icon-button > span.bars,
   .royal-navy button.icon-button > span.bars::before,
   .royal-navy button.icon-button > span.bars::after {
     height: 4px;
   }
   .royal-navy .calendar-inner::after {
-    background-color: rgba(44, 81, 97, 0.5);
+    background-color: #b5b5b5e9;
   }
   .royal-navy .calendar-sidebar > span#sidebarToggler,
   .royal-navy #eventListToggler {
@@ -179,8 +187,8 @@
     bottom: -8px;
   }
   .royal-navy .calendar-events {
-    -webkit-box-shadow: -5px 0 18px -3px #216583;
-    box-shadow: -5px 0 18px -3px #216583;
+    -webkit-box-shadow: -5px 0 18px -3px #b5b5b5e9;
+    box-shadow: -5px 0 18px -3px #b5b5b5e9;
   }
   .royal-navy.event-hide .calendar-events {
     -webkit-transform: translateX(calc(100% + 1px));
@@ -213,12 +221,12 @@
 }
 @media screen and (max-width: 425px) {
   .royal-navy .calendar-sidebar > .calendar-year {
-    background-color: #216583;
+    background-color: #b5b5b5e9;
     -webkit-box-shadow: 0 5px 8px -3px rgba(12, 37, 47, 0.65);
     box-shadow: 0 5px 8px -3px rgba(12, 37, 47, 0.65);
   }
   .royal-navy .calendar-sidebar > .month-list {
-    background-color: #174d65;
+    background-color: #b5b5b5e9;
   }
   .royal-navy .calendar-sidebar > .month-list > .calendar-months {
     padding: 10px;
@@ -241,8 +249,8 @@
   }
   .royal-navy .calendar-inner {
     padding: 63px 0 40px 0;
-    -webkit-box-shadow: 0 5px 8px -3px rgba(12, 37, 47, 0.65);
-    box-shadow: 0 5px 8px -3px rgba(12, 37, 47, 0.65);
+    -webkit-box-shadow: 0 5px 8px -3px #b5b5b5e9;
+    box-shadow: 0 5px 8px -3px #b5b5b5e9;
   }
   .royal-navy.event-hide .calendar-events,
   .royal-navy .calendar-events {

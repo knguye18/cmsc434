@@ -126,11 +126,12 @@ img {
 }
 
 .navbar a:hover {
-  background-color: #000;
+  background-color: #393939;
+;
 }
 
 .navbar a.active {
-  background-color: #4caf50;
+  background-color: #393939;
 }
 
 .autocom-box {

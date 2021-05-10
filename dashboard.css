@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/roboto.ttf");
+  }
 
 @font-face {
     font-family: 'Material Icons';
@@ -30,7 +34,7 @@
    word-wrap: normal;
    white-space: nowrap;
    direction: ltr;
-    color: white;
+    color: #393939;
    /* Support for all WebKit browsers. */
    -webkit-font-smoothing: antialiased;
    /* Support for Safari and Chrome. */
@@ -50,6 +54,7 @@ body {
     background-image: url("imgs/bg.jpg");
     background-position: center 60%;
     margin: 0;
+    font-family: 'roboto';
 }
 
 .root {
@@ -79,7 +84,8 @@ button {
 
 button > h3 {
     margin: 10px;
-    color: #FFFF;
+    color: #393939;
+    font-family: 'roboto';
 }
 
 .card {
@@ -88,9 +94,9 @@ button > h3 {
     border: 0em;
     border-radius: 15px;
     margin: 30px 50px 0px 50px;
-    background-color: #ff7575;
+    background-color: #b5b5b5e9;
     /* background-color: #ff2c3ece; */
-    box-shadow: 0px 0px 5px 0px #ff2c3ee9, 0 0 0 15px #ffffffeb;
+    box-shadow: 0px 0px 5px 0px #484646e9, 0 0 0 15px #ffffffeb;
     /* box-shadow: .4rem .2rem .2rem .1rem rgba(235, 168, 161, 0.6); */
     display: flex;
     flex-direction: column;

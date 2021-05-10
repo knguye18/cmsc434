@@ -63,7 +63,7 @@
     bottom: 0;
     width: 100%;
     padding: 5px 0;
-    background: #004134;
+    background: #393939;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     user-select: none;
     transition: bottom 0.4s;
@@ -123,7 +123,7 @@
 }
 
 .keyboard__key--active::after {
-    background: #08ff00;
+    background: #393939;
 }
 
 .keyboard__key--dark {
